@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply m-0 min-h-screen bg-slate-100 font-sans text-slate-900;
+    background-image:
+      radial-gradient(circle at 12% 0%, rgba(153, 246, 228, 0.5), transparent 30%),
+      radial-gradient(circle at 90% 0%, rgba(191, 219, 254, 0.45), transparent 34%);
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
