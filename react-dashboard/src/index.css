@@ -16,3 +16,95 @@
     @apply min-h-screen;
   }
 }
+
+@layer components {
+  .app-dark {
+    background:
+      radial-gradient(circle at 8% 0%, rgba(20, 184, 166, 0.18), transparent 32%),
+      radial-gradient(circle at 92% 0%, rgba(14, 165, 233, 0.16), transparent 34%),
+      linear-gradient(145deg, #020617 0%, #0f172a 48%, #111827 100%);
+    color: #e2e8f0;
+  }
+
+  .app-dark .bg-white,
+  .app-dark .bg-white\/85,
+  .app-dark .bg-white\/90,
+  .app-dark .bg-white\/95,
+  .app-dark .bg-slate-50,
+  .app-dark .bg-slate-100 {
+    background-color: rgba(15, 23, 42, 0.86) !important;
+  }
+
+  .app-dark .bg-white\/8,
+  .app-dark .bg-white\/5,
+  .app-dark .bg-white\/10 {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .section-tour-active {
+    box-shadow:
+      0 0 0 4px rgba(14, 165, 233, 0.24),
+      0 24px 80px rgba(14, 165, 233, 0.26) !important;
+    transform: scale(1.01);
+  }
+
+  .app-dark .section-tour-active {
+    box-shadow:
+      0 0 0 4px rgba(125, 211, 252, 0.32),
+      0 24px 90px rgba(14, 165, 233, 0.34) !important;
+  }
+
+  .app-dark .border-slate-200,
+  .app-dark .border-slate-200\/80,
+  .app-dark .border-slate-300 {
+    border-color: rgba(148, 163, 184, 0.28) !important;
+  }
+
+  .app-dark .text-slate-900,
+  .app-dark .text-slate-800,
+  .app-dark .text-teal-900 {
+    color: #f8fafc !important;
+  }
+
+  .app-dark .text-slate-700,
+  .app-dark .text-slate-600,
+  .app-dark .text-slate-500 {
+    color: #cbd5e1 !important;
+  }
+
+  .app-dark input,
+  .app-dark select {
+    background-color: rgba(2, 6, 23, 0.72) !important;
+    border-color: rgba(148, 163, 184, 0.34) !important;
+    color: #f8fafc !important;
+  }
+
+  .app-dark input::placeholder {
+    color: #94a3b8;
+  }
+
+  .app-dark .from-sky-50,
+  .app-dark .from-violet-50,
+  .app-dark .from-teal-50,
+  .app-dark .from-emerald-50,
+  .app-dark .from-fuchsia-500,
+  .app-dark .to-cyan-50,
+  .app-dark .to-purple-50,
+  .app-dark .to-emerald-50 {
+    --tw-gradient-from: rgba(15, 23, 42, 0.94) var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: rgba(30, 41, 59, 0.82) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  }
+
+  .app-dark .shadow-\[0_18px_50px_rgba\(15\,23\,42\,0\.08\)\],
+  .app-dark .shadow-inner,
+  .app-dark .shadow-lg {
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.32) !important;
+  }
+
+  .app-dark .recharts-cartesian-axis-tick-value,
+  .app-dark .recharts-legend-item-text {
+    fill: #cbd5e1 !important;
+    color: #cbd5e1 !important;
+  }
+}
